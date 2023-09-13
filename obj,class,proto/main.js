@@ -14,6 +14,19 @@ const sthephany = {
 
 // sthephany aprueba otro curso
 
-sthephany.aprobarCurso("curso de Figma");
+function student(nombre, apellido, edad, cursosAprobados) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.cursosAprobados = cursosAprobados;
+    // this.aprobarCurso = function(cursoAprobado) {
+    //     this.cursosAprobados.push(cursoAprobado);
+    // }
+}
 
-console.log(sthephany.cursosAprobados)
+student.prototype.aprobarCurso = function(cursoAprobado){
+    this.cursosAprobados.push(cursoAprobado);
+}
+
+const jorge = new student('Jorge', 'Suarez', 20, ['HTML5 Y CSS3', 'BOOTSTRAP 4', 'GIT Y GITHUB']);
+jorge.aprobarCurso('RESPONSIVE DESIGN');
