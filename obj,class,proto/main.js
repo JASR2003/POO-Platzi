@@ -7,8 +7,13 @@ const sthephany = {
         'Curso de uso y manejo del color',
         'Curso básico de Photoshop',
     ],
+    aprobarCurso(cursoAprobado){
+        this.cursosAprobados.push(cursoAprobado);
+    },
 };
 
 // sthephany aprueba otro curso
 
-sthephany.cursosAprobados.push('Curso de Diseño para Redes Sociales');
+sthephany.aprobarCurso("curso de Figma");
+
+console.log(sthephany.cursosAprobados)
