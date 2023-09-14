@@ -1,5 +1,9 @@
 class Student {
-    constructor(nombre, edad, cursosAprobados){
+    constructor({
+        nombre,
+        edad,
+        cursosAprobados = [],
+    }){
     this.nombre = nombre;
     this.edad = edad;
     this.cursosAprobados = cursosAprobados;
@@ -10,13 +14,13 @@ class Student {
     }
 }
 
-const lennin = new Student(
-    'Lennin',
-    40,
-    [
+const lennin = new Student({
+    nombre: 'Lennin',
+    edad: 40,
+    cursosAprobados: [
         'Programación en JavaScript',
         'Curso de programación Básica'
     ]
-);
+});
 
 lennin.aprobarCurso('Diseño de páginas con WordPress');
