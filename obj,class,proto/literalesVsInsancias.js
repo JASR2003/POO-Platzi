@@ -100,9 +100,19 @@ const escuelaWeb = new LearningPath({
     name: 'escuela web',
     teacher: 'Diego de Granda',
     courses: [
+        'curso de programación básica',
         'curso definitivo de HTML y CSS',
         'curso practico de HTML y CSS',
         'curso de responsive design',
+    ]
+})
+const escuelaData = new LearningPath({
+    name: 'escuela data Business',
+    teacher: 'Diego de Granda',
+    courses: [
+        'curso de programación básica',
+        'curso DataBusiness',
+        'curso Dataviz',
     ]
 })
 
@@ -110,11 +120,13 @@ const juan2 = new Student({
     name: 'Juan',
     username: 'JuanDC',
     email: 'juan123@gmail.com',
-    instagram: 'fjuandc'
+    instagram: 'fjuandc',
+    LearningPath: [escuelaWeb, escuelaData],
 })
 const jose2 = new Student({
     name: 'Jose',
     username: 'joseED',
     email: 'jose123@gmail.com',
-    twitter: 'fjoseED'
+    twitter: 'fjoseED',
+    LearningPath: [escuelaData],
 })
