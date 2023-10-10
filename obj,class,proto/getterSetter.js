@@ -22,3 +22,5 @@ let juguete2 = {
 
 juguete2.edad = 17; // La edad debe ser mayor o igual a 18
 juguete2.edad = 21; // 21
+
+// el get y set hacen que las propiedades tengan mayor o menor alcance, es decir si son privadas de un prototipo, o si son publicas, es decir que desde fuera se pueda se pueda llamar
